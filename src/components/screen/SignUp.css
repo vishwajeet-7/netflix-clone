@@ -10,3 +10,33 @@
     display: flex;
     flex-direction: column;
 }
+
+.signup > form > input {
+    outline-width: 0;
+    height: 40px;
+    margin-bottom: 14px;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 15px;
+}
+
+.signup > form > button {
+    padding: 16px 20px;
+    font-size: 1rem;
+    color: #fff;
+    border-radius: 5px;
+    background-color: #e50914;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.signup_gray{
+    color: gray;
+}
+
+.signup_link:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
