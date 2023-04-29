@@ -9,7 +9,7 @@ const [movie,setMovie] = useState([]);
 
 useEffect(()=>{
   async function fetchData(){
-    const request = await instance(requests.fetchNetflixOriginals);
+    const request = await instance(requests.fetchActionMovies);
     setMovie(
       request.data.results[
         Math.floor(Math.random()*request.data.results.length - 1)

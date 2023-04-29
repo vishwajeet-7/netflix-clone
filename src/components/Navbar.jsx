@@ -4,6 +4,7 @@ import './Navbar.css';
 const Navbar = () => {
   const [show,handleShow] = useState(false);
 
+  //handling disappering and appearing of navbar
   const transitionNavbar = ()=>{
     if(window.scrollY > 100){
       handleShow(true);

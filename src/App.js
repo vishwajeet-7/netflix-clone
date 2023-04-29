@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
-import HomeScreen from './components/HomeScreen';
+import AllRoutes from './routes/All.Routes';
 
 function App() {
+  
   return (
     <div className="app">
-      <HomeScreen/>
+      <AllRoutes/>
     </div>
   );
 }
