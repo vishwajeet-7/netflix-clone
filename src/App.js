@@ -11,8 +11,6 @@ import Login from "./components/screen/Login";
 function App() {
   const dispatch = useDispatch();
   const user = useSelector(selectUser);
-  console.log(user)
-
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (userAuth) => {
       if (userAuth) {
@@ -26,11 +24,11 @@ function App() {
         );
       } else {
         //logged out
-        dispatch(logout);
+        dispatch(logout());
       }
     });
     return unsubscribe;
-  }, []);
+  }, [dispatch]);
 
   return (
     <div className="app">
