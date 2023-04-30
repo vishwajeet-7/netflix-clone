@@ -1,7 +1,10 @@
 import React, { useState } from 'react'
 import './Plan.css'
+import { useSelector } from 'react-redux'
+import { selectUser } from '../../features/userSlice'
 
 const Plan = () => {
+    const user = useSelector(selectUser)
     const plans = [
         {
             name:"Netflix Standard",
@@ -23,7 +26,8 @@ const Plan = () => {
     // Netflix Basic - 480p
     // Netflix Premium - 4K+HDR
     const loadCheckout = (name,price)=>{
-
+        const successUrl = window.location.origin;
+        const cancelUrl = window.location.origin;
     }
 
   return (
