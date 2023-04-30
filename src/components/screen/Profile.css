@@ -51,3 +51,8 @@
     cursor: pointer;
     font-weight: 600;
 }
+
+.profile_info > h3 {
+    height: 100px;
+    margin-top: 10px;
+}
